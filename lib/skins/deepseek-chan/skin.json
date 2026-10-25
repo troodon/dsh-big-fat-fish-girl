@@ -1,0 +1,12 @@
+{
+  "title": "DeepSeek Chan (Big Fat Fish Girl)",
+  "description": "Long navy hair, whale-fin ears, navy maid dress and whale-tail character art.",
+  "head": {
+    "base": [14, 32, 32, 14, 25, 11, 7, 21, 13, 6, 4],
+    "idle": [2, 7, 7, 15, 18],
+    "work": [5, 12, 10, 15],
+    "food": [20, 3, 5],
+    "story": [36, 31, 43, 53, 33, 61, 16, 24, 53, 34, 48]
+  },
+  "gaze": { "gazeRows": [9], "mirrorLeft": true }
+}

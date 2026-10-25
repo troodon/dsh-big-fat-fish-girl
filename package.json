@@ -1,0 +1,103 @@
+{
+  "name": "big-fat-fish-girl",
+  "version": "0.8.0",
+  "type": "module",
+  "description": "A DeepSeek Harness plugin with a desktop pet that shows activity across your chats while you use other apps.",
+  "main": "./lib/host/index.mjs",
+  "files": [
+    "lib/client.js",
+    "lib/host/aggregate.mjs",
+    "lib/host/host-adapter.mjs",
+    "lib/host/host-routes.mjs",
+    "lib/host/index.mjs",
+    "lib/host/live-channel.mjs",
+    "lib/host/model.mjs",
+    "lib/host/shell-launch.mjs",
+    "lib/host/shell-presence.mjs",
+    "lib/host/skins.mjs",
+    "lib/host/snapshot.mjs",
+    "lib/animation/manifest-defaults.mjs",
+    "lib/animation/manifest.mjs",
+    "lib/animation/sheet-revisions.mjs",
+    "lib/animation/sheets.mjs",
+    "lib/diagnostics.mjs",
+    "lib/i18n/lines.en.mjs",
+    "lib/i18n/lines.mjs",
+    "lib/i18n/lines.ru.mjs",
+    "lib/i18n/lines.zh-CN.mjs",
+    "lib/i18n/strings.mjs",
+    "lib/i18n/ui.en.mjs",
+    "lib/i18n/ui.ru.mjs",
+    "lib/i18n/ui.zh-CN.mjs",
+    "lib/protocol/contract.mjs",
+    "lib/settings/prefs.mjs",
+    "lib/skins/",
+    "desktop/pet.html",
+    "cordis.patch.yml",
+    "LICENSE",
+    "ASSET_LICENSE.md"
+  ],
+  "exports": {
+    ".": "./lib/host/index.mjs",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build-skin-data.mjs && node scripts/build-client.mjs",
+    "build:check": "node scripts/build-skin-data.mjs --check && node scripts/build-client.mjs --check",
+    "test": "node --test test/*.test.mjs",
+    "verify": "node scripts/verify-assets.mjs && node scripts/build-skin-data.mjs --check",
+    "check": "npm run verify && npm run build:check && npm run build:desktop:check && npm test",
+    "pack": "node scripts/pack-plugin.mjs",
+    "build:desktop": "node scripts/build-skin-data.mjs && node scripts/build-desktop.mjs",
+    "build:desktop:check": "node scripts/build-skin-data.mjs --check && node scripts/build-desktop.mjs --check",
+    "build:animation-assets": "python3 assets/source/deepseek-chan/build-animation-atlases.py && node scripts/build-skin-data.mjs",
+    "verify:animation-assets": "python3 assets/source/deepseek-chan/build-animation-atlases.py --verify && npm run verify",
+
+    "verify:routes": "node scripts/verify-routes.mjs",
+    "preview:art": "node scripts/build-preview.mjs",
+    "preview:lines": "node scripts/build-line-previews.mjs",
+    "verify:release": "sh scripts/verify-release.sh",
+    "test:core": "cargo test --manifest-path desktop/tauri/Cargo.toml -p big-fat-fish-girl-shell-core",
+    "test:shell-startup": "node scripts/verify-shell-startup.mjs",
+    "build:tauri": "cd desktop/tauri && cargo tauri build --bundles app",
+    "build:tauri:windows": "cd desktop/tauri && cargo tauri build --bundles nsis",
+    "build:tauri:binary": "cargo build --manifest-path desktop/tauri/Cargo.toml --release"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "jsdom": "^30.1.2"
+  },
+  "license": "Unlicense",
+  "author": "troodon",
+  "homepage": "https://github.com/troodon/dsh-big-fat-fish-girl#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troodon/dsh-big-fat-fish-girl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/troodon/dsh-big-fat-fish-girl/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "desktop-pet",
+    "mascot",
+    "sprite-animation"
+  ]
+}

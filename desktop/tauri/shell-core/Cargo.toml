@@ -1,0 +1,9 @@
+[package]
+name = "big-fat-fish-girl-shell-core"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "bffg_shell_core"
+path = "src/lib.rs"

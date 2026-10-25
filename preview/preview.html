@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Big Fat Fish Girl — plugin preview</title>
+  <style>
+    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; color: #e6eaf3; background: #101116; }
+    header { height: 64px; display: flex; align-items: center; gap: 13px; padding: 0 28px; border-bottom: 1px solid #252833; background: #16171d; }
+    .mark { width: 29px; height: 29px; border-radius: 9px; background: linear-gradient(135deg,#b6e3ff,#468ce1); box-shadow: 0 3px 18px #438ce344; }
+    header strong { font-size: 14px; letter-spacing: .02em; }
+    header span { color: #8e97a8; font-size: 12px; }
+    main { width: min(780px, calc(100% - 40px)); margin: 72px auto 0; }
+    .eyebrow { color: #84baf2; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+    h1 { margin: 12px 0 8px; font-size: clamp(27px,5vw,42px); font-weight: 620; letter-spacing: -.035em; }
+    .sub { color: #a5acba; font-size: 15px; line-height: 1.65; }
+    .conversation { margin-top: 40px; display: grid; gap: 16px; }
+    .message { max-width: 72%; padding: 16px 19px; border: 1px solid #30333d; border-radius: 16px; background: #191b22; color: #dce2ed; font-size: 14px; line-height: 1.6; }
+    .message.user { justify-self: end; border-color: #253d5c; background: #182233; }
+    .message small { display: block; margin-bottom: 6px; color: #8792a4; font-size: 11px; }
+    .composer { display: flex; align-items: center; min-height: 60px; margin-top: 28px; padding: 0 18px; border: 1px solid #30333d; border-radius: 20px; background: #1b1d24; color: #798394; font-size: 14px; }
+    .hint { margin-top: 14px; color: #7d8798; font-size: 12px; }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; padding: 10px 28px; border-bottom: 1px solid #23262f; background: #131419; }
+    .controls span { margin-right: 4px; color: #7f8899; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+    .controls button { padding: 6px 11px; border: 1px solid #303643; border-radius: 9px; background: #1b1e26; color: #cdd5e2; font: inherit; font-size: 12px; cursor: pointer; }
+    .controls button:hover { border-color: #3f6fa8; color: #eaf2ff; }
+    .controls button[data-active="true"] { border-color: #4a90d9; background: #1d2c3f; color: #dceaf9; }
+    @media (max-width: 600px) { main { margin-top: 46px; } .message { max-width: 90%; } }
+  </style>
+</head>
+<body>
+  <header><div class="mark"></div><strong>DeepSeek Harness</strong><span>local plugin preview — not the real app</span></header>
+  <div class="controls" id="controls">
+    <span>Состояние</span>
+    <button data-mood="idle">простой</button>
+    <button data-mood="running">работаю</button>
+    <button data-mood="waiting">жду тебя</button>
+    <button data-mood="welcome">пришла</button>
+    <button data-mood="review">готово</button>
+    <button data-mood="failed">ошибка</button>
+    <button data-mood="limited">лимит</button>
+    <span>Фаза</span>
+    <button data-phase="processing">думаю</button>
+    <button data-phase="composing">пишу ответ</button>
+    <span>Инструмент</span>
+    <button data-tool="reading">читаю</button>
+    <button data-tool="commanding">командую</button>
+    <button data-tool="browsing">ищу в сети</button>
+    <button data-tool="writing">правлю файл</button>
+    <button data-tool="none">сбросить</button>
+    <span>Скин</span>
+    <span id="skins"></span>
+  </div>
+  <main>
+    <div class="eyebrow">A companion, in the corner</div>
+    <h1>Big Fat Fish Girl</h1>
+    <div class="sub">Harness chat overlay · event-driven · all 16 glances · drag to move</div>
+    <div class="conversation">
+      <div class="message"><small>DeepSeek</small>Сессия начнётся с приветственного взмаха. Когда потребуется твоё решение, она подождёт рядом.</div>
+      <div class="message user"><small>Вы</small>И если я её потрогаю?</div>
+      <div class="message"><small>DeepSeek</small>Меню: помахать, подпрыгнуть и настроить размер. Перетащи её за собой — она меняет анимацию по направлению движения.</div>
+    </div>
+    <div class="composer">Сообщение или задача…</div>
+    <div class="hint">Это локальный просмотр интерфейса. Данные чата не отправляются.</div>
+  </main>
+  <script>
+    window.__ModuleLoader__ = {
+      load: function (definition) {
+        var plugin = definition.factory(function () { throw new Error("No preview dependencies"); });
+        plugin.apply();
+      }
+    };
+  </script>
+  <script src="/lib/client.js"></script>
+  <script>
+    // Preview-only control channel: the server exposes it, the real host does not.
+    const controls = document.getElementById('controls')
+    const send = (patch, button) => {
+      fetch('/big-fat-fish-girl/v1/preview/state', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(patch),
+      }).then(() => {
+        controls.querySelectorAll('button').forEach((other) => { other.dataset.active = 'false' })
+        if (button) button.dataset.active = 'true'
+      }).catch(() => {})
+    }
+    controls.addEventListener('click', (event) => {
+      const button = event.target.closest('button')
+      if (!button) return
+      if (button.dataset.mood !== undefined) send({ mood: button.dataset.mood, tool: null, phase: null }, button)
+      else if (button.dataset.phase !== undefined) send({ tool: null, mood: 'running', phase: button.dataset.phase }, button)
+      else if (button.dataset.tool === 'none') send({ tool: null, phase: null }, button)
+      else if (button.dataset.tool !== undefined) send({ tool: { phase: button.dataset.tool } }, button)
+      else if (button.dataset.skin !== undefined) send({ prefs: { skin: button.dataset.skin } }, button)
+    })
+    // The installed skins come from the server; the selector shows what ships.
+    fetch('/big-fat-fish-girl/v1/skins').then((response) => (response.ok ? response.json() : [])).then((skins) => {
+      const row = document.getElementById('skins')
+      for (const skin of skins) {
+        const button = document.createElement('button')
+        button.textContent = skin.title
+        button.dataset.skin = skin.id
+        row.append(button)
+      }
+    }).catch(() => {})
+  </script>
+</body>
+</html>

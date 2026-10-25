@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Big Fat Fish Girl Shell",
+  "version": "0.8.0",
+  "identifier": "dev.bffg.shell",
+  "build": {
+    "frontendDist": "../frontend"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "macOSPrivateApi": true,
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app"
+    ],
+    "category": "Entertainment",
+    "shortDescription": "A tiny animated companion that lives on your desktop.",
+    "longDescription": "A transparent, always-on-top desktop pet for the DeepSeek Harness plugin. It reflects activity across your chats; click it to bring Harness to the foreground on its last open chat.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

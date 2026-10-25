@@ -1,0 +1,20 @@
+[package]
+name = "big-fat-fish-girl-shell"
+version = "0.8.0"
+edition = "2021"
+publish = false
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["macos-private-api"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+png = "0.17"
+# Loopback HTTP only: no TLS stack needed for a local harness.
+ureq = { version = "2", default-features = false, features = ["json"] }
+big-fat-fish-girl-shell-core = { path = "../shell-core" }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_Security", "Win32_System_Threading"] }

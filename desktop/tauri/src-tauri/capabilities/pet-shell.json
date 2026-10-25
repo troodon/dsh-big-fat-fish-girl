@@ -1,0 +1,28 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "pet-shell",
+  "description": "The pet page served by the plugin (remote loopback) may use the shell commands.",
+  "windows": ["pet"],
+  "remote": {
+    "urls": [
+      "http://127.0.0.1:*/*",
+      "http://127.0.0.1/*",
+      "http://localhost:*/*",
+      "http://localhost/*"
+    ]
+  },
+  "permissions": [
+    "core:default",
+    "allow-move-by",
+    "allow-quit-app",
+    "allow-start-drag",
+    "allow-end-drag",
+    "allow-reset-position",
+    "allow-frame",
+    "allow-interactive-regions",
+    "allow-open-target",
+    "allow-open-menu",
+    "allow-ping",
+    "allow-self-report"
+  ]
+}

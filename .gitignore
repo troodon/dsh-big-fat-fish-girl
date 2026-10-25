@@ -1,0 +1,15 @@
+node_modules/
+*.tgz
+desktop/tauri/target/
+desktop/tauri/src-tauri/gen/
+docs/preview/*.tmp
+.DS_Store
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Editable PNGs live on art-source; registered frames are generated locally.
+/assets/source/deepseek-chan/boards/
+/assets/source/deepseek-chan/frames/
+/assets/source/deepseek-chan/frames-256/

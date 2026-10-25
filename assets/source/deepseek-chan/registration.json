@@ -1,0 +1,1907 @@
+{
+  "schemaVersion": 1,
+  "cell": {
+    "width": 256,
+    "height": 256
+  },
+  "targetAnchor": {
+    "x": 128,
+    "y": 250
+  },
+  "sourceCell": {
+    "width": 192,
+    "height": 256
+  },
+  "equation": "x_out=128+s*(x_in-ax)+mx; y_out=250+s*(y_in-ay)+my",
+  "notes": {
+    "base-idle": "Body axis measured through the apron/pelvis center; foot support measured from dense sole pixels. Integer translation only.",
+    "story-reply-typing": "Stationary desk pose: align torso axis and dense sole support; keyboard and hand movement remain authored.",
+    "story-edit-file": "Per-frame torso/support registration; document and hand motion remain authored. A large residual body-shape change is documented in the audit.",
+    "story-think": "Keep the seated torso on the same axis and feet on the support line; keyboard and facial motion remain authored.",
+    "technical": "Preserve the existing drawing and position; add 32 transparent pixels at left by mapping source x=96 to output x=128."
+  },
+  "sequences": {
+    "base-failed": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-06.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-07.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-gaze-00-07": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-06.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-07.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-gaze-08-15": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-06.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-07.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-idle": {
+      "registration": "body-support",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 94,
+          "ay": 249,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 249,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 95,
+          "ay": 249,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 95,
+          "ay": 248,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 94,
+          "ay": 248,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 95,
+          "ay": 248,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-jump": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-review": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-run-left": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-06.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-07.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-run-right": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-06.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-07.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-running": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-waiting": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "base-wave": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "food-eat-rice": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "food-sushi-tray": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "food-token-wallet": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "idle-adjust-headband": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "idle-peek-around": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "idle-play-bubble": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "idle-sleep": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "idle-stretch-yawn": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-celebrate": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-edit-file": {
+      "registration": "body-support",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 94,
+          "ay": 247,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 99,
+          "ay": 247,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 98,
+          "ay": 247,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 99,
+          "ay": 247,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 92,
+          "ay": 248,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 99,
+          "ay": 248,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-problem": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-reading": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-reply-typing": {
+      "registration": "body-support",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 94,
+          "ay": 246,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 94,
+          "ay": 245,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 94,
+          "ay": 246,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 94,
+          "ay": 248,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 93,
+          "ay": 247,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 94,
+          "ay": 246,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-restful-sleep": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-snack": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-think": {
+      "registration": "body-support",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 94,
+          "ay": 246,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 93,
+          "ay": 247,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 94,
+          "ay": 247,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 94,
+          "ay": 249,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 93,
+          "ay": 249,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 95,
+          "ay": 248,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-tool-use": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-waiting-call": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "story-wallet-check": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-06.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-07.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-08.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "work-complete": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "work-compose-reply": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "work-process-input": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    },
+    "work-use-tool": {
+      "registration": "technical-transfer",
+      "frames": [
+        {
+          "file": "frame-00.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-01.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-02.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-03.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-04.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        },
+        {
+          "file": "frame-05.png",
+          "ax": 96,
+          "ay": 250,
+          "s": 1,
+          "mx": 0,
+          "my": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-interactive-regions"
+description = "Enables the interactive_regions command without any pre-configured scope."
+commands.allow = ["interactive_regions"]
+
+[[permission]]
+identifier = "deny-interactive-regions"
+description = "Denies the interactive_regions command without any pre-configured scope."
+commands.deny = ["interactive_regions"]

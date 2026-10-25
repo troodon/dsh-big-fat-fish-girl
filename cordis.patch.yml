@@ -1,0 +1,5 @@
+# One independent Harness bundle entry. The browser module and host module use
+# the same package ID so the official client-module loader pairs them.
+- insert:
+    - id: big-fat-fish-girl
+      name: big-fat-fish-girl
