@@ -1,0 +1,5 @@
+/assets/source/deepseek-chan/frames-256/
+/lib/
+__pycache__/
+*.pyc
+.DS_Store
